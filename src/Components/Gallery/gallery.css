@@ -1,0 +1,285 @@
+.bd-best {
+	height: calc(200px + 3rem);
+	padding: 0.5rem 0;
+	overflow: hidden;
+	position: relative;
+  }
+  
+  .bd-best-list {
+	align-items: stretch;
+	animation-duration: 50s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	display: flex;
+	left: 0;
+	position: absolute;
+	top: 1rem;
+	-webkit-animation-name: bdBestCarousel;
+	animation-name: bdBestCarousel;
+  }
+  
+  .bd-best-item {
+	flex-grow: 0;
+	flex-shrink: 0;
+	margin-right: 16px;
+	transition-duration: 45ms;
+	transition-property: box-shadow, transform;
+  }
+  
+  .bd-best-item:hover {
+	box-shadow: 0 1em 1em rgba(0, 0, 0, 0.1);
+	transform: translateY(-0.1em);
+  }
+  
+  .bd-best-list:hover {
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+  }
+  
+  /* fx */
+  
+  @keyframes slide {
+		0% {
+		  left: 0%;
+		  opacity: 0;
+		}
+		2% {
+		  left: 0%;
+		  opacity: 1;
+		}
+		8% {
+		  left: 0%;
+		  opacity: 1;
+		}
+		10% {
+		  left: 0%;
+		  opacity: 0;
+		}
+		12% {
+		  left: -100%;
+		  opacity: 0;
+		}
+		14% {
+		  left: -100%;
+		  opacity: 1;
+		}
+		18% {
+		  left: -100%;
+		  opacity: 1;
+		}
+		20% {
+		  left: -100%;
+		  opacity: 0;
+		}
+		22% {
+		  left: -200%;
+		  opacity: 0;
+		}
+		24% {
+		  left: -200%;
+		  opacity: 1;
+		}
+		28% {
+		  left: -200%;
+		  opacity: 1;
+		}
+		30% {
+		  left: -200%;
+		  opacity: 0;
+		}
+		32% {
+		  left: -300%;
+		  opacity: 0;
+		}
+		34% {
+		  left: -300%;
+		  opacity: 1;
+		}
+		38% {
+		  left: -300%;
+		  opacity: 1;
+		}
+		40% {
+		  left: -300%;
+		  opacity: 0;
+		}
+		42% {
+		  left: -400%;
+		  opacity: 0;
+		}
+		44% {
+		  left: -400%;
+		  opacity: 1;
+		}
+		58% {
+		  left: -400%;
+		  opacity: 1;
+		}
+		50% {
+		  left: -400%;
+		  opacity: 0;
+		}
+		52% {
+		  left: -500%;
+		  opacity: 0;
+		}
+		54% {
+		  left: -500%;
+		  opacity: 1;
+		}
+		58% {
+		  left: -500%;
+		  opacity: 1;
+		}
+		60% {
+		  left: -500%;
+		  opacity: 0;
+		}
+		62% {
+		  left: -600%;
+		  opacity: 0;
+		}
+		64% {
+		  left: -600%;
+		  opacity: 1;
+		}
+	68% {left: -600%;opacity: 1;}
+	70% {left: -600%;opacity: 0;}
+
+	72% {left: -700%;opacity: 0;}
+	74% {left: -700%;opacity: 1;}
+	78% {left: -700%;opacity: 1;}
+	80% {left: -700%;opacity: 0;}
+
+	82% {left: -800%;opacity: 0;}
+	84% {left: -800%;opacity: 1;}
+	88% {left: -800%;opacity: 1;}
+	90% {left: -800%;opacity: 0;}
+
+	92% {left: -900%;opacity: 0;}
+	94% {left: -900%;opacity: 1;}
+	98% {left: -900%;opacity: 1;}
+	99% {left: -900%;opacity: 0;}
+
+	100% {left: 0%;opacity: 0;}
+  }
+  
+  
+  @media (min-width: 768px) {
+	.bd-best {
+	height: calc(400px + 3rem); /* adjust height for larger screens */
+	}
+	
+	.bd-best-list {
+	top: 2rem; /* increase distance from top */
+	}
+	
+	.bd-best-item {
+	margin-right: 32px; /* increase margin between items */
+	}
+	
+	.bd-best-item:hover {
+	transform: translateY(-.2em); /* increase hover effect */
+	}
+	
+	/* adjust animation duration for larger screens */
+	@keyframes bdBestCarousel {
+	100% {
+	transform: translateX(calc(-155% + 3120px));
+	}
+	}
+	
+	/* increase width of figcaption for larger screens */
+	.portfolio_item figcaption {
+	width: 50%;
+	}
+	
+	/* adjust height of portfolio for larger screens */
+	.portfolio {
+	height: 400px;
+	}
+	}
+	
+	/* add media query for even larger screens /
+	@media (min-width: 1200px) {
+	.bd-best-item {
+	margin-right: 48px; / further increase margin between items */
+	
+	
+	/* increase animation duration for even larger screens */
+	@keyframes bdBestCarousel {
+	100% {
+	transform: translateX(calc(-150% + 4800px));
+	}
+	}
+	
+	/* adjust height of portfolio for even larger screens */
+	.portfolio {
+	height: 800px;
+	}
+	
+	
+	/* add media query for very large screens /
+	@media (min-width: 1920px) {
+	/ increase width of bd-best-list for very large screens */
+	.bd-best-list {
+	width: 10000px;
+	}
+	
+	/* further adjust animation duration for very large screens */
+	@keyframes bdBestCarousel {
+	100% {
+	transform: translateX(calc(-150% + 9600px));
+	}
+	}
+	
+	/* increase width of kl_img for very large screens */
+	.kl_img {
+	width: 500px;
+	}
+	
+	@media (min-width: 768px) {
+		.bd-best {
+		  height: calc(300px + 3rem);
+		}
+		
+		.bd-best-item {
+		  margin-right: 24px;
+		}
+	  }
+	  
+	  @media (min-width: 1024px) {
+		.bd-best {
+		  height: calc(400px + 3rem);
+		}
+		
+		.bd-best-item {
+		  width: 200px;
+		  height: 100px;
+		  margin-right: 32px;
+		}
+	  }
+	  @media (min-width: 768px) {
+		.portfolio_item figcaption {
+		  width: 50%;
+		}
+	  }
+	  
+	  @media (min-width: 1024px) {
+		.portfolio_item figcaption {
+		  width: 35%;
+		}
+	  }
+	  
+	  @media (min-width: 1280px) {
+		.portfolio_item figcaption {
+		  width: 25%;
+		}
+	  }
+	  
+	  @media (min-width: 1920px) {
+		.portfolio_item figcaption {
+		  width: 20%;
+		}
+	  }
+ 

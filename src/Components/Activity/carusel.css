@@ -1,0 +1,86 @@
+.carusel{
+    margin-top: 5rem;
+    width:100%;
+    height:auto;
+    color:black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:5px;
+}
+.carusel h3{
+    padding-top: 50px;
+    font-size: 30px;
+}
+.carusel p{
+    margin-top: 15px;
+}
+.slider{
+    width:85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2.0rem;
+    height: 420px;
+}
+.slider2 .ssContent{
+    font-size: 25px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.slider1 .ss1{
+    text-align: center;
+}
+.slider3 .ss2{
+    text-align: center;
+}
+
+.btn1{
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid transparent; 
+    border-left: 10px solid transparent; 
+    border-right:40px solid rgb(0, 162, 255); 
+    background-color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    .slider {
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .slider > div {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .slider {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .slider > div {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .btn1, .btn2 {
+        margin: 0;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .slider2 {
+        box-shadow: none;
+    }
+    .slider > div {
+        height: auto;
+    }
+    .btn1, .btn2 {
+        border-top: 20px solid transparent;
+        border-bottom: 20px solid transparent;
+        border-right: 20px solid rgb(0, 162, 255);
+        border-left: 20px solid transparent;
+        margin: 0;
+    }
+}

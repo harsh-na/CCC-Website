@@ -1,0 +1,219 @@
+/* Default styles */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.row99{
+    padding :10px;
+    width: 70%;
+    height: 0vh;
+    position: relative;
+    top: 10rem;
+    padding-left: 32rem;
+    top: -15px;
+}
+
+.row99 .card99{
+    width: 85px;
+    height: 90px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    float: left;
+}
+
+.row99 .card99 img{
+    width: 105%;
+    height: 105%;
+    object-fit: cover;
+}
+
+.row99 .card99 .content99{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    background: linear-gradient(45deg, rgb(18, 165, 244), hwb(230 3% 7% / 0.874));
+    transition: all 0.4s linear;
+}
+
+.row99 .card99 .content99.box99{
+    clip-path: inset(0 0 0 100%);
+}
+
+.row99 .card99:hover .content99.box99{
+    clip-path: inset(0 0 0 0);
+}
+
+.row99 .card99 .content99 h3{
+    font-size: 10px;
+    color: #ffffff;
+    font-weight: 150;
+    line-height: 12px;
+    letter-spacing: 2px;
+    padding-top: -70px;
+    margin: 4px;
+}
+
+.row99 .card99 .content99 p{
+    font-size: 10px;
+    color: #ffffff;
+    padding-bottom: 3px;
+    margin-bottom: -2px;
+}
+
+.row99 .card99 .content99 ul li{
+    display: inline-block;
+    margin-left: -35px;
+}
+
+.row99 .card99 .content99 ul li a{
+    display: block;
+    color: #ffffff;
+    font-size: 11px;
+    padding: 3px;
+    transition: all 0.5s linear;
+}
+
+.row99 .card99 .content99 ul li:hover a{
+    transform: translateY(-6px);
+}
+
+.row991 .card99 .content99 h3{
+    font-size: 1px;
+    color: #ffffff;
+    font-weight: 50;
+    line-height: 7px;
+    letter-spacing: 1px;
+    padding-bottom: 3px;
+}
+
+/* Responsive styles for screens smaller than 992px */
+@media(max-width: 992px) {
+    .row99 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    }
+    
+    .row99 .card99 {
+    width: 25%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    float: none;
+    }
+    
+    .row99 .card99 img {
+    width: 100%;
+    height: auto;
+    }
+    
+    .row99 .card99 .content99 h3 {
+    font-size: 12px;
+    line-height: 14px;
+    }
+    }
+/* Adjustments for screens smaller than 768px */
+@media(max-width: 768px) {
+    .row99 {
+      top: 5rem;
+    }
+  
+    .row99 .card99 {
+      width: 30%;
+    }
+  }
+  
+  /* Adjustments for screens smaller than 576px */
+  @media(max-width: 576px) {
+    .row99 {
+      top: 3rem;
+    }
+  
+    .row99 .card99 {
+      width: 50%;
+    }
+  
+    .row99 .card99 .content99 h3 {
+      font-size: 8px;
+      line-height: 10px;
+    }
+  
+    .row99 .card99 .content99 p {
+      font-size: 8px;
+    }
+  
+    .row99 .card99 .content99 ul li a {
+      font-size: 9px;
+    }
+  }
+
+  @media only screen and (max-width: 480px) {
+    .row99 {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    }
+    
+    .row99 .card99 {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    float: none;
+    }
+    
+    .row99 .card99 img {
+    width: 100%;
+    height: auto;
+    }
+    
+    .row99 .card99 .content99 h3 {
+    font-size: 8px;
+    line-height: 10px;
+    }
+    
+    .row99 .card99 .content99 p {
+    font-size: 8px;
+    }
+    
+    .row99 .card99 .content99 ul li {
+    margin-left: -25px;
+    }
+    
+    .row99 .card99 .content99 ul li a {
+    font-size: 9px;
+    padding: 2px;
+    }
+    }
+    @media (max-width: 576px){
+.row99 {
+    top: 0rem;
+}
+    }
+@media only screen and (max-width: 480px){
+.row99 .card99 {
+    width: 28%;
+    margin: 0 auto;
+    margin-bottom: 2px;
+    float: none;
+    height: 6rem;
+}
+}
+@media only screen and (max-width: 480px) and (min-width: 0px){
+.table1 {
+    width: 90%;
+    margin: 0 1rem;
+    position: relative;
+    left: 0;
+    font-size: 9px;
+}
+}

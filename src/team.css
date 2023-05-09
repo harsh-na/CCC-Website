@@ -1,0 +1,394 @@
+/* Default styles */
+
+.ourteam {
+    margin-top: 7rem;
+  }
+  
+  .section1-title h2 {
+    text-transform: uppercase;
+    text-align: center;
+  }
+  
+  .section1-title {
+    margin: 0;
+  }
+  
+  .section1-title p {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .single1-team {
+    padding-bottom: 70px;
+    position: relative;
+    left: 1.5rem;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 5% 5% 5% 5%;
+    /* box-shadow: 2px 1px 4px #000;  */
+  }
+  
+  #fourth-year {
+    display: inline-flex;
+    position: relative;
+    left: 12rem;
+  }
+  
+  #thirdyear {
+    position: relative;
+    left: 15rem;
+  }
+  
+  .team1-img {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    width: 260px;
+    height: 263px;
+  }
+  
+  .team1-img img {
+    width: 100%;
+    transition: 0.3s;
+  }
+  
+  .single1-team:hover .team1-img img {
+    transform: scale(1, 1);
+  }
+  
+  .team1-area {
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .team1-content {
+    height: 80px;
+    width: 105%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    bottom: 0;
+    transition: all 0.4s;
+    background: #81c6e8;
+  }
+  
+  .single1-team:hover .team1-content {
+    height: 160px;
+  }
+  
+  .team1-info {
+    padding: 10px 20px 5px 20px;
+    transition: all 0.5s;
+  }
+  
+  .single1-team:hover .team1-content {
+    background: #4b4fcc; /*#3D3BBB */
+  }
+  
+  .single1-team .team1-content .team1-info h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    margin: 5px;
+  }
+  
+  .team1-info p {
+    color: white;
+  }
+  
+  .single1-team:hover .team1-info h3 {
+    color: #f20ebd;
+    font-weight: bold;
+  }
+  
+  .single1-team-text p {
+    margin-top: 5px;
+  }
+  
+  .team1-text {
+    color: #fff;
+    /* padding: 0 10px 5px; */
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  .team-bt {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  #iconanimate:hover {
+    transform: translateY(-6px);
+    cursor: pointer;
+    color: #f20ebd;
+  }
+  
+  .team1-text a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  #Team2special {
+    position: relative;
+    left: 0rem;
+  }
+  
+  #fourth-year3 {
+    display: inline-flex;
+    position: relative;
+    left: 32%;
+  }
+  
+  .teamfooter {
+    margin-top: 20rem;
+  }
+  
+  /* Media queries */
+  
+  /* For tablets and small laptops */
+  @media screen and (max-width: 1024px) {
+    .single1-team {
+      left: 0;
+      margin-bottom: 2rem;
+    }
+  
+  }
+  /* Mobile */
+@media only screen and (max-width: 600px) {
+    body{
+        background-position-y: 34rem;
+    }
+   
+    #fourth-year,
+    #thirdyear {
+    left: 0;
+    }
+    .team1-img {
+    width: 100%;
+    height: auto;
+    }
+    .team1-content {
+    height: 120px;
+    width: 100%;
+    }
+    .single1-team:hover .team1-content {
+    height: 140px;
+    }
+    .single1-team {
+        padding-bottom: 30px;
+        left: 0;
+        width: 81%;
+        /* align-items: center; */
+        /* justify-content: center; */
+        text-align: center;
+        margin: 0 0 2rem 2rem;
+    }
+    .single1-team .team1-content .team1-info h3 {
+    font-size: 14px;
+    }
+    .team1-text {
+    flex-wrap: wrap;
+    }
+    .team-bt {
+    flex-wrap: wrap;
+    }
+    .team1-info p {
+    font-size: 14px;
+    }
+    .teamfooter {
+    margin-top: 15rem;
+    }
+    }
+    
+    /* Tablet */
+    @media only screen and (min-width: 601px) and (max-width: 1024px) {
+    .single1-team {
+    padding-bottom: 50px;
+    left: 1rem;
+    }
+    #fourth-year,
+    #thirdyear {
+    left: 8rem;
+    }
+    .team1-img {
+    width: 200px;
+    height: 203px;
+    }
+    .single1-team:hover .team1-content {
+    height: 150px;
+    }
+    .single1-team .team1-content .team1-info h3 {
+    font-size: 18px;
+    }
+    .team1-info p {
+    font-size: 16px;
+    }
+    }
+    
+    /* Laptop */
+    @media only screen and (min-width: 1025px) {
+    .single1-team {
+    padding-bottom: 70px;
+    }
+    #fourth-year {
+    left: 12rem;
+    }
+    #thirdyear {
+    left: 15rem;
+    }
+    .team1-img {
+    width: 260px;
+    height: 263px;
+    }
+    .single1-team:hover .team1-content {
+    height: 160px;
+    }
+    .single1-team .team1-content .team1-info h3 {
+    font-size: 20px;
+    }
+    .team1-info p {
+    font-size: 18px;
+    }
+    .teamfooter {
+    margin-top: 20rem;
+    }
+    }
+    /* Mobile Styles */
+    @media screen and (max-width:400px) {
+        #fourth-year3 {
+            display: inline-flex;
+            position: relative;
+            left: 0px;
+        }
+        
+    }
+    @media screen and (min-width: 401px) and (max-width: 767px) {
+    .ourteam {
+      margin-top: 3rem;
+    }
+    .single1-team {
+      left: 0;
+      border-radius: 0;
+      padding-bottom: 40px;
+    }
+    .team1-img {
+      width: 100%;
+      height: auto;
+    }
+    #fourth-year {
+      display: block;
+      left: 5px;
+    }
+    #thirdyear {
+      left: 0;
+    }
+    .team1-area {
+      margin-top: 1rem;
+    }
+    #fourth-year3 {
+        display: inline-flex;
+        position: relative;
+        left: 5px;
+    }
+    .single1-team .team1-content {
+      width: 100%;
+      position: relative;
+      height: auto;
+      background: #81c6e8;
+    }
+    .single1-team:hover .team1-content {
+      background: #4b4fcc;
+    }
+    .team1-info {
+      padding: 10px;
+    }
+    .single1-team:hover .team1-content {
+      height: auto;
+    }
+    .single1-team:hover .team1-info h3 {
+      color: #f20ebd;
+    }
+    .team1-text {
+      flex-wrap: wrap;
+    }
+    .team1-text a {
+      margin-top: 5px;
+    }
+    .team-bt {
+      margin-top: 5px;
+      justify-content: center;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .ourteam {
+      margin-top: 5rem;
+    }
+    .single1-team {
+      left: 1rem;
+      padding-bottom: 50px;
+    }
+    #fourth-year {
+      left: 8%;
+    }
+    #thirdyear {
+      left: 10%;
+    }
+  }
+  
+  /* Laptop Styles */
+  @media screen and (min-width: 992px) {
+    .ourteam {
+      margin-top: 7rem;
+    }
+    .section1-title h2 {
+      text-align: center;
+    }
+    .section1-title {
+      margin: 0 2rem;
+    }
+    .single1-team {
+      left: 1.5rem;
+      padding-bottom: 70px;
+      border-radius: 5% 5% 5% 5%;
+    }
+    #fourth-year {
+      display: inline-flex;
+      position: relative;
+      left: 12rem;
+    }
+    #thirdyear {
+      position: relative;
+      left: 15rem;
+    }
+    .team1-img {
+      width: 260px;
+      height: 263px;
+    }
+    .single1-team:hover .team1-img img {
+      transform: scale(1, 1);
+    }
+    .team1-content {
+      height: 80px;
+      width: 105%;
+      position: absolute;
+      text-align: center;
+      overflow: hidden;
+      bottom: 0;
+      transition: all 0.4s;
+      background: #81c6e8;
+    }
+    .single1-team:hover .team1-content {
+      height: 160px;
+      background: #4b4fcc;
+    }
+    .team1-info {
+      padding: 10px 20px 5px 20px;
+      transition: all 0.5s;
+    }
+    .single1-team .team1-content .team1-info h3 {
+      color: #fff;
+      font-size: 16px;
+    }
+}
