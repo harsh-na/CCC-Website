@@ -11,7 +11,7 @@
 body {
   overflow-x: hidden;
   background-color: #fff;
-  background-image: url("C:\Users\gupta\OneDrive\Desktop\ccc\ccc website\css\src\image\2.jpg");
+  background-image: url(../src/image/2.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-size: 100rem 21.875rem;
@@ -378,7 +378,7 @@ HEADER
 home page part 3
 ========================= */
 .whatwedo {
-   background-image: url("C:\Users\gupta\OneDrive\Desktop\ccc\ccc website\css\src\image\4m_purplewave_footer.png"); 
+   background-image: url(../src//image/4m_purplewave_footer.png); 
 
   background-repeat: no-repeat;
   background-size: 100%;

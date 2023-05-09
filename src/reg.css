@@ -1,5 +1,5 @@
 .wrapper6{
-    background-image: url("C:\Users\gupta\OneDrive\Desktop\ccc\ccc website\css\src\image\background.jpg");
+    background-image: url(../src/image/background.jpg);
 }
 input, textarea, select, .btn17 {
     font-family: arial;
